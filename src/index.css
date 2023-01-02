@@ -15,7 +15,9 @@
 :active {
 	outline: none;
 }
-
+a {
+	color: inherit;
+}
 a:focus,
 a:active {
 	outline: none;
@@ -95,6 +97,7 @@ body {
 	font-family: "DM Sans", sans-serif;
 	font-size: 18px;
 	font-weight: normal;
+	color: var(--white);
 	background: var(--bg);
 }
 

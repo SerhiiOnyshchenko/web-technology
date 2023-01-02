@@ -1,0 +1,66 @@
+.navWrapper {
+	height: calc(100% - 144px);
+	width: 375px;
+	position: fixed;
+	display: flex;
+	flex-direction: column;
+	padding: 0 16px 42px;
+	top: 144px;
+	left: 50%;
+	box-sizing: border-box;
+	transform: translateX(-50%);
+	z-index: 50;
+}
+.List {
+	position: relative;
+	background-color: transparent;
+	background-image: url(../../images/Shape-1.png), url(../../images/Shape-2.png);
+	background-repeat: no-repeat, no-repeat;
+	background-size: 135px 111px, 123px 117px;
+	background-position: left -10px bottom 13px, right top 56px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 32px;
+}
+.List::before {
+	content: "";
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 213px;
+	height: 213px;
+	border-radius: 50%;
+	background-image: radial-gradient(circle, #2b2078 0%, #4968b2 51.56%, #66ace9 100%);
+	filter: blur(100px);
+	z-index: -1;
+	transform: translate(-50%, -50%);
+}
+.Item {
+	width: 100%;
+	font-size: 32px;
+	line-height: 1.5;
+	letter-spacing: -0.15px;
+	transition: var(--transition);
+}
+.Item a {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.Item:hover,
+.Item:focus,
+.Active {
+	background: linear-gradient(94deg, #8269e7 5.99%, #6089e9 55.44%, #68c0e8 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+.Tel {
+	margin-top: auto;
+	display: flex;
+	justify-content: center;
+}
