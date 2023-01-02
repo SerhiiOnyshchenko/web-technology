@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/web-technology/static/css/main.6c8f62ad.css",
+    "main.js": "/web-technology/static/js/main.0a79a433.js",
+    "index.html": "/web-technology/index.html",
+    "main.6c8f62ad.css.map": "/web-technology/static/css/main.6c8f62ad.css.map",
+    "main.0a79a433.js.map": "/web-technology/static/js/main.0a79a433.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.6c8f62ad.css",
+    "static/js/main.0a79a433.js"
+  ]
+}
