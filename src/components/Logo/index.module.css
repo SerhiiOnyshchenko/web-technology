@@ -1,0 +1,20 @@
+.Logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 104px;
+	height: 30px;
+	background: url(../../images/Logo.png) no-repeat center/cover;
+}
+@media screen and (min-width: 1024px) {
+	.Logo {
+		width: 182px;
+		height: 52px;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.Logo {
+		width: 197px;
+		height: 56px;
+	}
+}

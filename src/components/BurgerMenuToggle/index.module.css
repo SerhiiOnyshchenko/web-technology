@@ -1,0 +1,8 @@
+.Btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: transparent;
+	z-index: 454;
+	margin-left: auto;
+}
