@@ -1,0 +1,17 @@
+.Container {
+	position: relative;
+	width: min(100% - 16px, 375px);
+	margin-inline: auto;
+	height: auto;
+}
+
+@media screen and (min-width: 1024px) {
+	.Container {
+		width: min(100% - 60px, 1024px);
+	}
+}
+@media screen and (min-width: 1440px) {
+	.Container {
+		width: min(100% - 160px, 1440px);
+	}
+}
