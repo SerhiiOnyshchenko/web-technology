@@ -1,0 +1,193 @@
+.Hero {
+  padding-top: 150px;
+  background-image: url(../../images/Shape-1.png), url(../../images/Shape-2.png);
+  background-repeat: no-repeat, no-repeat;
+  background-size: 135px 111px, 123px 117px;
+  background-position: left 5px top 159px, right 3px top 54px;
+}
+
+.HeroText {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.HeroTitle {
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.4;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-bottom: 24px;
+  width: 343px;
+  height: 80px;
+}
+.TitleText {
+  background: linear-gradient(
+    94deg,
+    #8269e7 5.99%,
+    #6089e9 55.44%,
+    #68c0e8 100%
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+}
+.HeroTitle::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 253px;
+  height: 253px;
+  border-radius: 50%;
+  background: radial-gradient(
+    88.71% 88.71% at 2.64% 26.5%,
+    #2b2078 0%,
+    #4968b2 51.56%,
+    #66ace9 100%
+  );
+  filter: blur(100px);
+  z-index: -1;
+  transform: translate(-50%, -50%);
+}
+.HeroAfterTitle {
+  width: 307px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.57;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #bcc9df;
+  mix-blend-mode: normal;
+  opacity: 0.6;
+  margin-bottom: 189px;
+}
+.HeroAdvantage {
+  padding-top: 120px;
+}
+.List {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+.Item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 211px;
+}
+.Icon {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 12px;
+  margin-bottom: 34px;
+}
+.Icon::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 12px;
+  background: var(--gradient);
+  opacity: 0.06;
+}
+.Title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.2;
+  text-align: center;
+  letter-spacing: 0.2px;
+  color: #ffffff;
+  margin-bottom: 12px;
+}
+.Text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.7;
+  text-align: center;
+  letter-spacing: -0.4px;
+  color: #bcc9df;
+}
+@media screen and (min-width: 1024px) {
+  .Hero {
+    padding-top: 120px;
+    background-size: 455px 374px, 300px 283px;
+    background-position: left -17px top 197px, right -10px top 109px;
+  }
+  .HeroTitle {
+    width: 750px;
+    height: 168px;
+    font-size: 64px;
+    line-height: 1.3;
+    margin-bottom: 24px;
+  }
+  .HeroTitle::before {
+    width: 474px;
+    height: 474px;
+    filter: blur(200px);
+  }
+  .HeroAfterTitle {
+    width: 442px;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #bcc9df;
+    margin-bottom: 40px;
+  }
+  .HeroAdvantage {
+    padding-top: 120px;
+  }
+  .List {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .Item {
+    width: 211px;
+    height: 264px;
+  }
+  .Text {
+    font-size: 14px;
+    line-height: 1.7;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .Hero {
+    background-position: left -29px top 208px, right 68px top 187px;
+  }
+  .HeroTitle {
+    width: 904px;
+    font-size: 72px;
+    line-height: 1.16;
+  }
+  .HeroTitle::before {
+    width: 686px;
+    height: 686px;
+  }
+  .HeroAfterTitle {
+    width: 540px;
+    font-size: 18px;
+    line-height: 1.5;
+    color: #ffffff;
+  }
+  .HeroAdvantage {
+    padding-top: 150px;
+  }
+  .List {
+    gap: 32px;
+  }
+  .Item {
+    width: 256px;
+  }
+  .Text {
+    font-size: 18px;
+    line-height: 1.5;
+  }
+}
