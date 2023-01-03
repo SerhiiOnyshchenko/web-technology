@@ -1,0 +1,127 @@
+.Technology {
+	margin-bottom: 120px;
+}
+.Container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+.Title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.75;
+	letter-spacing: -2px;
+	margin-bottom: 16px;
+}
+.PreTitle {
+	width: 343px;
+	text-align: center;
+
+	font-size: 16px;
+	line-height: 1.75;
+	letter-spacing: -0.4px;
+	color: var(--grey);
+	margin-bottom: 60px;
+}
+.Wrapper {
+	position: relative;
+	padding: 28px 26px;
+	width: 100%;
+	border-radius: 16px;
+	background: linear-gradient(
+		94deg,
+		rgba(130, 105, 231, 0.3) 5.99%,
+		rgba(96, 137, 233, 0.3) 55.44%,
+		rgba(104, 192, 232, 0.3) 100%
+	);
+	background-clip: padding-box;
+	color: var(--white);
+	border: 1px solid transparent;
+}
+.Wrapper::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -1;
+	border-radius: inherit;
+	background: var(--bg);
+}
+.Wrapper:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: -2;
+	margin: -1px;
+	border-radius: inherit;
+	background: var(--gradient);
+}
+.List {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 16px;
+	margin-bottom: 0;
+}
+.Item {
+	padding: 8px 22px;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.71;
+	text-transform: uppercase;
+	color: var(--bg);
+	background: var(--white);
+	border-radius: 6px;
+}
+.Code {
+	display: none;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 1.25;
+	margin-left: 103px;
+}
+@media screen and (min-width: 1024px) {
+	.PreTitle {
+		width: 442px;
+	}
+	.Wrapper {
+		padding: 32px 39px;
+		max-width: 904px;
+	}
+	.List {
+		flex-wrap: nowrap;
+		gap: 13px;
+		margin-bottom: 36px;
+	}
+	.Code {
+		display: block;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.Technology {
+		margin-bottom: 150px;
+	}
+	.PreTitle {
+		width: 544px;
+		font-size: 18px;
+		line-height: 1.56;
+	}
+	.Wrapper {
+		max-width: 1110px;
+	}
+	.List {
+		justify-content: center;
+		gap: 18px;
+		margin-bottom: 38px;
+	}
+	.Item {
+		font-size: 18px;
+		line-height: 1.33;
+	}
+}

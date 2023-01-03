@@ -6,7 +6,7 @@ import s from './index.module.css';
 
 export default function OurServices() {
   return (
-    <section className={s.OurServices}>
+    <section id="Services" className={s.OurServices}>
       <Container>
         <div className={s.Container}>
           <h2 className={s.Title}>Our Services</h2>
