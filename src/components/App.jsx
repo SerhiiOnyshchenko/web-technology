@@ -1,5 +1,6 @@
 import Header from './Header/Header';
 import OurServices from './OurServices/OurServices';
+import Technology from './Technology/Technology';
 
 export const App = () => {
   return (
@@ -7,7 +8,7 @@ export const App = () => {
       <Header />
       {/* <Hero /> */}
       <OurServices />
-      {/* <Technology /> */}
+      <Technology />
       {/* <Prices /> */}
       {/* <Portfolio /> */}
       {/* <Reviews /> */}
