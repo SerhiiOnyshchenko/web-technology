@@ -1,11 +1,12 @@
 import Header from './Header/Header';
+import OurServices from './OurServices/OurServices';
 
 export const App = () => {
   return (
     <>
       <Header />
       {/* <Hero /> */}
-      {/* <Services /> */}
+      <OurServices />
       {/* <Technology /> */}
       {/* <Prices /> */}
       {/* <Portfolio /> */}
