@@ -1,33 +1,33 @@
 @import-normalize; /* bring in normalize.css styles */
 * {
-	padding: 0;
-	margin: 0;
-	border: 0;
+  padding: 0;
+  margin: 0;
+  border: 0;
 }
 
 *,
 *:before,
 *:after {
-	box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 :focus,
 :active {
-	outline: none;
+  outline: none;
 }
 a {
-	color: inherit;
+  color: inherit;
 }
 a:focus,
 a:active {
-	outline: none;
+  outline: none;
 }
 
 nav,
 footer,
 header,
 aside {
-	display: block;
+  display: block;
 }
 
 html {
@@ -37,51 +37,51 @@ html {
 }
 
 body {
-	/* height: 100%; */
-	width: 100%;
-	font-size: 100%;
-	line-height: 1;
-	font-size: 14px;
-	-ms-text-size-adjust: 100%;
-	-moz-text-size-adjust: 100%;
-	-webkit-text-size-adjust: 100%;
+  /* height: 100%; */
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
 }
 
 input,
 button,
 textarea {
-	font-family: inherit;
+  font-family: inherit;
 }
 
 input::-ms-clear {
-	display: none;
+  display: none;
 }
 
 button {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 button::-moz-focus-inner {
-	padding: 0;
-	border: 0;
+  padding: 0;
+  border: 0;
 }
 
 a,
 a:visited {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 a:hover {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 ul li {
-	list-style: none;
+  list-style: none;
 }
 
 img {
-	vertical-align: top;
-	width: 100%;
+  vertical-align: top;
+  width: 100%;
 }
 
 h1,
@@ -90,20 +90,21 @@ h3,
 h4,
 h5,
 h6 {
-	font-size: inherit;
-	font-weight: inherit;
+  font-size: inherit;
+  font-weight: inherit;
 }
 
 body {
-	font-family: "DM Sans", sans-serif;
-	font-size: 18px;
-	font-weight: normal;
-	color: var(--white);
-	background: var(--bg);
+  font-family: 'DM Sans', sans-serif;
+  font-size: 18px;
+  font-weight: normal;
+  color: var(--white);
+  background: var(--bg);
 }
 
 code {
-	font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
 }
 /* width */
 ::-webkit-scrollbar {
@@ -127,11 +128,16 @@ code {
   background: #555;
 } */
 :root {
-	--gradient: linear-gradient(94deg, #8269e7 5.99%, #6089e9 55.44%, #68c0e8 100%);
-	--bg: #080814;
-	--grey: #a4a8bb;
-	--white: #ffffff;
-	--text-input: #cecece;
-	--text: #bcc9df;
-	--transition: all 0.5s linear;
+  --gradient: linear-gradient(
+    94deg,
+    #8269e7 5.99%,
+    #6089e9 55.44%,
+    #68c0e8 100%
+  );
+  --bg: #080814;
+  --grey: #a4a8bb;
+  --white: #ffffff;
+  --text-input: #cecece;
+  --text: #bcc9df;
+  --transition: all 0.5s linear;
 }
