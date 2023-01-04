@@ -33,16 +33,7 @@
 	gap: 48px;
 }
 .List::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	bottom: 0;
-	width: 504px;
-	height: 504px;
-	border-radius: 50%;
-	background-image: radial-gradient(circle, #2b2078 0%, #4968b2 51.56%, #66ace9 100%);
-	filter: blur(200px);
-	z-index: -1;
+	display: none;
 }
 .Item {
 	position: relative;
@@ -189,6 +180,19 @@
 	.List {
 		flex-direction: row;
 		gap: 20px;
+	}
+	.List::before {
+		content: "";
+		position: absolute;
+		display: block;
+		left: 0;
+		bottom: 0;
+		width: 504px;
+		height: 504px;
+		border-radius: 50%;
+		background-image: radial-gradient(circle, #2b2078 0%, #4968b2 51.56%, #66ace9 100%);
+		filter: blur(200px);
+		z-index: -1;
 	}
 }
 @media screen and (min-width: 1440px) {
