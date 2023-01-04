@@ -5,8 +5,12 @@ import { ReactComponent as IconApplication } from '../../images/svg/Icon_Applica
 import { ReactComponent as IconWorkflow } from '../../images/svg/Icon_Workflow.svg';
 import { ReactComponent as IconRocket } from '../../images/svg/Icon_Rocket.svg';
 import { ReactComponent as IconSupport } from '../../images/svg/Icon_CS.svg';
+import Modal from 'components/Modal/Modal';
+import { useState } from 'react';
 
 export default function Hero() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <section className={s.Hero}>
       <Container>
@@ -20,14 +24,20 @@ export default function Hero() {
             introduce our own developments that allow you to increase
             applications from your site by 2 times.
           </p>
-          <Button>Order a site</Button>
+          <Button
+            onClick={() => {
+              setOpen(true);
+            }}
+          >
+            Order a site
+          </Button>
           <div className={s.HeroAdvantage}>
             <ul className={s.List}>
               <li className={s.Item}>
                 <span className={s.Icon}>
                   <IconApplication width="40px" />
                 </span>
-                <h3 className={s.Title}>Сlean code</h3>
+                <h3 className={s.Title}>Clean code</h3>
                 <p className={s.Text}>
                   Create reports with an easy to use drag-and-drop designer.
                 </p>
@@ -64,6 +74,13 @@ export default function Hero() {
             </ul>
           </div>
         </div>
+        {isOpen && (
+          <Modal
+            onClose={() => {
+              setOpen(false);
+            }}
+          />
+        )}
       </Container>
     </section>
   );

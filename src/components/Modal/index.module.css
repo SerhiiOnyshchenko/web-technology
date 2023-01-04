@@ -1,0 +1,54 @@
+.Backdrop {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: var(--bg);
+	padding-top: 78px;
+	z-index: 1000;
+}
+.Wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	position: absolute;
+	top: 24px;
+	left: 50%;
+	height: 40px;
+	width: 343px;
+	transform: translateX(-50%);
+}
+
+.Close {
+	position: absolute;
+	top: 0px;
+	right: 0;
+	width: 40px;
+	height: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
+
+@media screen and (max-width: 1023px) {
+	.Content form {
+		width: 343px;
+	}
+}
+@media screen and (min-width: 1024px) {
+	.Backdrop {
+		padding-top: 0;
+	}
+	.Close {
+		top: 20px;
+		right: 15px;
+	}
+	.Content section {
+		margin-bottom: 0;
+	}
+}

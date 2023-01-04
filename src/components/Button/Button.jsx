@@ -6,12 +6,14 @@ export default function Button({
   mg = 0,
   active = false,
   children,
+  onClick,
 }) {
   return (
     <button
       type="button"
       className={active ? `${s.Btn} ${s.Active}` : s.Btn}
       style={{ width: wd, margin: mg }}
+      onClick={onClick}
     >
       {children}
     </button>
