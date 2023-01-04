@@ -2,8 +2,12 @@ import Container from 'components/Container/Container';
 import { ReactComponent as Icon } from '../../images/svg/Icon.svg';
 import { ReactComponent as IconRight } from '../../images/svg/Arrow_Right_white.svg';
 import s from './index.module.css';
+import Modal from 'components/Modal/Modal';
+import { useState } from 'react';
 
 export default function Prices() {
+  const [isOpen, setOpen] = useState(false);
+
   return (
     <section id="Prices" className={s.Prices}>
       <Container>
@@ -49,7 +53,13 @@ export default function Prices() {
                   <p>domain and hosting for 1 year as a gift</p>
                 </li>
               </ul>
-              <button type="button" className={s.Btn}>
+              <button
+                type="button"
+                className={s.Btn}
+                onClick={() => {
+                  setOpen(true);
+                }}
+              >
                 <div className={s.BtnText}>Order a site</div>
                 <IconRight />
               </button>
@@ -90,7 +100,13 @@ export default function Prices() {
                   <p>domain and hosting for 1 year as a gift</p>
                 </li>
               </ul>
-              <button type="button" className={s.Btn}>
+              <button
+                type="button"
+                className={s.Btn}
+                onClick={() => {
+                  setOpen(true);
+                }}
+              >
                 <div className={s.BtnText}>Order a site</div>
                 <IconRight />
               </button>
@@ -125,13 +141,26 @@ export default function Prices() {
                   <p>domain and hosting for 1 year as a gift</p>
                 </li>
               </ul>
-              <button type="button" className={s.Btn}>
+              <button
+                type="button"
+                className={s.Btn}
+                onClick={() => {
+                  setOpen(true);
+                }}
+              >
                 <div className={s.BtnText}>Order a site</div>
                 <IconRight />
               </button>
             </li>
           </ul>
         </div>
+        {isOpen && (
+          <Modal
+            onClose={() => {
+              setOpen(false);
+            }}
+          />
+        )}
       </Container>
     </section>
   );
