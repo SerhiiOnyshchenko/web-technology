@@ -1,0 +1,132 @@
+.Form {
+	padding: 22px 14px 34px;
+	background: var(--white);
+	color: var(--bg);
+	border-radius: 8px;
+	display: flex;
+	flex-direction: column;
+}
+.Title {
+	font-size: 20px;
+	line-height: 1.8;
+	letter-spacing: 0.2px;
+	margin-bottom: 12px;
+}
+.BoxName {
+	width: 100%;
+	margin-right: 0;
+}
+.BoxPhone {
+	width: 100%;
+}
+.Label {
+	display: block;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.31;
+	margin-bottom: 8px;
+}
+.Input {
+	position: relative;
+	padding: 13px 20px;
+	width: 100%;
+	margin-bottom: 40px;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.38;
+	transition: var(--transition);
+	background: linear-gradient(white, white) padding-box, linear-gradient(var(--grey), var(--grey)) border-box;
+	border-radius: 28px;
+	border: 1px solid transparent;
+}
+.Input:not(:placeholder-shown),
+.Input:hover,
+.Input:focus {
+	background: linear-gradient(white, white) padding-box, var(--gradient) border-box;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+	border: 1px solid var(--grey);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: var(--bg);
+}
+
+.Textarea {
+	padding: 13px 20px;
+	width: 100%;
+	height: 125px;
+	background: linear-gradient(white, white) padding-box, linear-gradient(var(--grey), var(--grey)) border-box;
+	border: 1px solid transparent;
+	border-radius: 24px;
+	margin-bottom: 34px;
+	resize: none;
+	transition: var(--transition);
+}
+.Textarea:not(:placeholder-shown),
+.Textarea:hover,
+.Textarea:focus {
+	background: linear-gradient(white, white) padding-box, var(--gradient) border-box;
+}
+
+.Submit {
+	display: block;
+	width: 240px;
+	padding: 13px;
+	background: var(--gradient);
+	border-radius: 24px;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 1.33;
+	color: var(--white);
+	margin: 0 auto;
+}
+@media screen and (min-width: 1024px) {
+	.Form {
+		width: 456px;
+		padding: 24px 24px 36px;
+		flex-direction: row;
+		flex-wrap: wrap;
+	}
+	.Title {
+		font-size: 24px;
+		line-height: 1.5;
+		margin-bottom: 30px;
+	}
+	.BoxName {
+		width: 196px;
+		margin-right: 16px;
+	}
+	.BoxPhone {
+		width: 196px;
+	}
+	.Input {
+		margin-bottom: 20px;
+	}
+	.Submit {
+		padding: 16px;
+		border-radius: 34px;
+		width: 100%;
+	}
+}
+@media screen and (min-width: 1440px) {
+	.Form {
+		width: 487px;
+		padding: 30px;
+	}
+	.Title {
+		font-size: 28px;
+		line-height: 1.29;
+	}
+	.BoxName {
+		width: 206px;
+		margin-right: 15px;
+	}
+	.BoxPhone {
+		width: 206px;
+	}
+	.Textarea {
+		margin-bottom: 48px;
+	}
+}
