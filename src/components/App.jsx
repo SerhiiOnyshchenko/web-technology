@@ -1,3 +1,4 @@
+import Footer from './Footer/Footer';
 import Header from './Header/Header';
 import Hero from './Hero/Hero';
 import OurServices from './OurServices/OurServices';
@@ -14,7 +15,7 @@ export const App = () => {
       <Prices />
       {/* <Portfolio /> */}
       {/* <Reviews /> */}
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
