@@ -1,18 +1,22 @@
 {
   "files": {
-    "main.css": "/web-technology/static/css/main.6f57d61a.css",
-    "main.js": "/web-technology/static/js/main.e099d882.js",
+    "main.css": "/web-technology/static/css/main.6081d82f.css",
+    "main.js": "/web-technology/static/js/main.9794fe16.js",
     "static/media/Idea.svg": "/web-technology/static/media/Idea.fba4828c475c767ec2c32b35a434d7ba.svg",
+    "static/media/Icon_CS.svg": "/web-technology/static/media/Icon_CS.347b9904c6f9a560e8ba2fffcfab5bc9.svg",
+    "static/media/Icon_Workflow.svg": "/web-technology/static/media/Icon_Workflow.f891e8aa51eed75b10ce7086f28d5358.svg",
+    "static/media/Icon_Rocket.svg": "/web-technology/static/media/Icon_Rocket.051a22fab765a9759d238c93e0032cd9.svg",
     "static/media/Pen.svg": "/web-technology/static/media/Pen.efbb78cc571498e74ea421cfab964307.svg",
+    "static/media/Icon_Application.svg": "/web-technology/static/media/Icon_Application.ca59ea14428e01887091e66f1aa90d71.svg",
     "static/media/Syntax.svg": "/web-technology/static/media/Syntax.daf7b809b3f965723b7ca6aca57f8e40.svg",
     "index.html": "/web-technology/index.html",
     "static/media/Icon.svg": "/web-technology/static/media/Icon.a3eef5fab508a2c43b378895b789cef7.svg",
     "static/media/Arrow_Right_white.svg": "/web-technology/static/media/Arrow_Right_white.715a3b4873dc917f2db0dce9b609d417.svg",
-    "main.6f57d61a.css.map": "/web-technology/static/css/main.6f57d61a.css.map",
-    "main.e099d882.js.map": "/web-technology/static/js/main.e099d882.js.map"
+    "main.6081d82f.css.map": "/web-technology/static/css/main.6081d82f.css.map",
+    "main.9794fe16.js.map": "/web-technology/static/js/main.9794fe16.js.map"
   },
   "entrypoints": [
-    "static/css/main.6f57d61a.css",
-    "static/js/main.e099d882.js"
+    "static/css/main.6081d82f.css",
+    "static/js/main.9794fe16.js"
   ]
 }
