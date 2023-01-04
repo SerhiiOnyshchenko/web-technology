@@ -31,8 +31,9 @@ aside {
 }
 
 html {
-  width: 100vw;
-  overflow-x: hidden;
+	width: 100vw;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
 }
 
 body {
@@ -105,7 +106,27 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+/* width */
+::-webkit-scrollbar {
+	width: 10px;
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+	background: var(--bg);
+	border-radius: 5px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--gradient);
+	border-radius: 5px;
+}
+
+/* Handle on hover */
+/* ::-webkit-scrollbar-thumb:hover {
+  background: #555;
+} */
 :root {
   --gradient: linear-gradient(
     94deg,
