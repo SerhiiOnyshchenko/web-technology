@@ -5,7 +5,7 @@ import s from './index.module.css';
 
 export default function Prices() {
   return (
-    <section id="Services" className={s.Prices}>
+    <section id="Prices" className={s.Prices}>
       <Container>
         <div className={s.Container}>
           <h2 className={s.Title}>Our Prices</h2>

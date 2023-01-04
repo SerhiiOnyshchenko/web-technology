@@ -4,6 +4,7 @@
 	align-items: center;
 	width: 104px;
 	height: 30px;
+	z-index: 51;
 	background: url(../../images/Logo.png) no-repeat center/cover;
 }
 @media screen and (min-width: 1024px) {

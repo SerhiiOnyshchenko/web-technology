@@ -1,0 +1,29 @@
+.List {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 48px;
+}
+.Item {
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 1.56;
+	letter-spacing: -0.4px;
+	transition: var(--transition);
+}
+
+.Item:hover,
+.Item:focus,
+.Active {
+	background: linear-gradient(94deg, #8269e7 5.99%, #6089e9 55.44%, #68c0e8 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	background-clip: text;
+	text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1440px) {
+	.List {
+		gap: 54px;
+	}
+}
