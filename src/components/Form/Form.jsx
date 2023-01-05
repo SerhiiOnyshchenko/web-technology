@@ -1,12 +1,31 @@
 import s from './index.module.css';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 
 export default function Form() {
-  const submit = e => {
+  const form = useRef();
+
+  const sendEmail = e => {
     e.preventDefault();
-    console.log(e.target.message.value);
+    emailjs
+      .sendForm(
+        process.env.REACT_APP_YOUR_SERVICE_ID,
+        process.env.REACT_APP_YOUR_TEMPLATE_ID,
+        form.current,
+        process.env.REACT_APP_YOUR_PUBLIC_KEY
+      )
+      .then(
+        result => {
+          console.log(result.text);
+        },
+        error => {
+          console.log(error.text);
+        }
+      );
   };
+
   return (
-    <form className={s.Form} onSubmit={submit}>
+    <form className={s.Form} ref={form} onSubmit={sendEmail} method="POST">
       <h3 className={s.Title}>Discuss the project</h3>
       <div className={s.BoxName}>
         <label className={s.Label} htmlFor="name">

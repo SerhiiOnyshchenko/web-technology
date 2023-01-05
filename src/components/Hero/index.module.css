@@ -108,6 +108,12 @@
 	letter-spacing: -0.4px;
 	color: #bcc9df;
 }
+@media screen and (max-width: 374px) {
+	.HeroTitle {
+		font-size: 24px;
+		width: 320px;
+	}
+}
 @media screen and (min-width: 1024px) {
 	.Hero {
 		padding-top: 120px;

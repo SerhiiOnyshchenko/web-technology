@@ -26,6 +26,11 @@
 .Links {
 	display: none;
 }
+@media screen and (max-width: 374px) {
+	.Footer ul {
+		gap: 20px;
+	}
+}
 @media screen and (min-width: 1024px) {
 	.Footer ul {
 		justify-content: start;
