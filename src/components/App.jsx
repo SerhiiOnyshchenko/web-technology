@@ -5,6 +5,7 @@ import Hero from './Hero/Hero';
 import OurServices from './OurServices/OurServices';
 import Prices from './Prices/Prices';
 import Technology from './Technology/Technology';
+import Portfolio from './Portfolio/Portfolio';
 
 export const App = () => {
   return (
@@ -14,7 +15,7 @@ export const App = () => {
       <OurServices />
       <Technology />
       <Prices />
-      {/* <Portfolio /> */}
+      <Portfolio />
       {/* <Reviews /> */}
       <FormSection />
       <Footer />
