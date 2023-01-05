@@ -1,4 +1,6 @@
 .FormSection {
+	display: flex;
+	justify-content: center;
 	margin-bottom: 84px;
 }
 .Wrapper {
@@ -76,7 +78,11 @@
 	line-height: 1.7;
 	color: var(--text);
 }
-
+@media screen and (max-width: 374px) {
+	.Wrapper {
+		width: 320px;
+	}
+}
 @media screen and (min-width: 1024px) {
 	.FormSection {
 		margin-bottom: 120px;

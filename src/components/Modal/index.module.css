@@ -40,6 +40,14 @@
 		width: 343px;
 	}
 }
+@media screen and (max-width: 374px) {
+	.Wrapper {
+		width: 320px;
+	}
+	.Content form {
+		width: 320px;
+	}
+}
 @media screen and (min-width: 1024px) {
 	.Backdrop {
 		padding-top: 0;
