@@ -1,0 +1,151 @@
+.Reviews {
+	position: relative;
+	margin-bottom: 120px;
+}
+.Reviews::before {
+	display: none;
+}
+.Title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 1.75;
+	text-align: center;
+	letter-spacing: -2px;
+	color: #ffffff;
+	margin-bottom: 16px;
+}
+.PreTitle {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.5;
+	text-align: center;
+	letter-spacing: -0.4px;
+	color: #bcc9df;
+	margin-bottom: 60px;
+}
+.Text {
+	width: 315px;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.33;
+	letter-spacing: 0.2px;
+	margin-bottom: 12px;
+}
+.Wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+.BoxName {
+	display: flex;
+	align-items: flex-end;
+}
+.Icon {
+	display: none;
+}
+.Name {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.33;
+	color: var(--text);
+}
+.Company {
+	display: none;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 1.33;
+	color: var(--text);
+}
+.BoxBtn {
+	display: flex;
+}
+.Btn {
+	position: relative;
+	top: 20px;
+	width: 56px;
+	height: 56px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+}
+
+.Btn svg stop:nth-child(1),
+.Btn svg stop:nth-child(2),
+.Btn svg stop:nth-child(3) {
+	transition: var(--transition);
+	stop-color: var(--white);
+}
+.Btn:hover svg stop:nth-child(1) {
+	stop-color: #8269e7;
+}
+.Btn:hover svg stop:nth-child(2) {
+	stop-color: #6089e9;
+}
+.Btn:hover svg stop:nth-child(3) {
+	stop-color: #68c0e8;
+}
+.Btn:disabled svg stop:nth-child(1),
+.Btn:disabled svg stop:nth-child(2),
+.Btn:disabled svg stop:nth-child(3) {
+	stop-color: var(--grey);
+}
+@media screen and (min-width: 1024px) {
+	.Reviews {
+		margin-bottom: 200px;
+	}
+	.Reviews::before {
+		content: "";
+		position: absolute;
+		display: block;
+		right: 0;
+		top: -252px;
+		width: 504px;
+		height: 504px;
+		border-radius: 50%;
+		background-image: radial-gradient(circle, #2b2078 0%, #4968b2 51.56%, #66ace9 100%);
+		filter: blur(200px);
+		z-index: -1;
+	}
+	.PreTitle {
+		margin-bottom: 102px;
+	}
+	.Text {
+		width: 515px;
+		font-weight: 400;
+		font-size: 32px;
+		line-height: 1.44;
+		letter-spacing: 0.2px;
+		margin-bottom: 12px;
+		margin: 0 auto;
+	}
+	.Wrapper {
+		align-items: flex-end;
+	}
+	.Icon {
+		display: block;
+		width: 154px;
+		height: 114px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.Name {
+		margin-left: 182px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.Title {
+		font-size: 36px;
+		line-height: 1.56;
+	}
+
+	.Name {
+		margin-left: 74px;
+	}
+	.Company {
+		display: block;
+		margin-left: 5px;
+	}
+}

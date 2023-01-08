@@ -42,7 +42,7 @@ export default function Portfolio() {
     },
   ];
   return (
-    <section className={s.Portfolio}>
+    <section id="Portfolio" className={s.Portfolio}>
       <Container>
         <h2 className={s.title}>Portfolio</h2>
         <p className={s.text}>
