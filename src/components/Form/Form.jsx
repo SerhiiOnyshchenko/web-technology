@@ -17,6 +17,7 @@ export default function Form() {
       .then(
         result => {
           console.log(result.text);
+          form.reset();
         },
         error => {
           console.log(error.text);
