@@ -1,18 +1,28 @@
 .Header {
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	background: black;
-	z-index: 50;
+	min-height: 96px;
 }
 
 .HeaderContainer {
-	padding: 33px 0;
+	padding: 35px 0;
 	display: flex;
 	justify-content: center;
 	align-items: center;
 	background: transparent;
+}
+.HeaderContainerFix {
+	padding: 35px 16px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: transparent;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: -10px;
+	max-width: 375px;
+	margin: 0 auto;
+	background: transparent;
+	z-index: 50;
 }
 
 .Tel {
@@ -33,7 +43,7 @@
 		position: relative;
 	}
 	.HeaderContainer {
-		padding: 34px 0;
+		padding: 39px 0;
 		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
@@ -41,6 +51,6 @@
 }
 @media screen and (min-width: 1440px) {
 	.HeaderContainer {
-		padding: 47px 0;
+		padding: 54px 0;
 	}
 }
