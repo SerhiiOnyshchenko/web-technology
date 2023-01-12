@@ -2,7 +2,7 @@
   "name": "web-technology",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://SerhiiOnyshchenko.github.io/web-technology/",
+  "homepage": "https://webtechnology.netlify.app",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.3",
