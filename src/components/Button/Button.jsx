@@ -11,7 +11,7 @@ export default function Button({
   return (
     <button
       type="button"
-      className={active ? `${s.Btn} ${s.Active}` : s.Btn}
+      className={active ? s.Active : s.Btn}
       style={{ width: wd, margin: mg }}
       onClick={onClick}
     >

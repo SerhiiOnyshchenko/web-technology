@@ -28,6 +28,7 @@ export default function Hero() {
             onClick={() => {
               setOpen(true);
             }}
+            active={true}
           >
             Order a site
           </Button>
