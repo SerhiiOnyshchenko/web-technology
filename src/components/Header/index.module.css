@@ -25,13 +25,16 @@
 	z-index: 50;
 }
 
-.Tel {
+.Request {
 	font-weight: 500;
+	font-size: inherit;
+	background: transparent;
+	color: inherit;
 	text-decoration-line: underline;
 	transition: var(--transition);
 }
-.Tel:hover,
-.Tel:focus {
+.Request:hover,
+.Request:focus {
 	background: linear-gradient(94deg, #8269e7 5.99%, #6089e9 55.44%, #68c0e8 100%);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;

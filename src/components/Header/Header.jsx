@@ -5,10 +5,12 @@ import s from './index.module.css';
 import MobileNav from 'components/MobileNav/MobileNav';
 import Nav from 'components/Nav/Nav';
 import { useState } from 'react';
+import Modal from 'components/Modal/Modal';
 
 export default function Header() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
   const [isOpen, setOpen] = useState(false);
+  const [showModal, setShowModal] = useState(false);
 
   return (
     <header className={s.Header}>
@@ -18,14 +20,27 @@ export default function Header() {
           {!isMobile ? (
             <>
               <Nav />
-              <a className={s.Tel} href="tel:+380">
+              <button
+                type="button"
+                className={s.Request}
+                onClick={() => {
+                  setShowModal(true);
+                }}
+              >
                 Request a call
-              </a>
+              </button>
             </>
           ) : (
             <MobileNav isOpen={isOpen} setOpen={setOpen} />
           )}
         </div>
+        {showModal && (
+          <Modal
+            onClose={() => {
+              setShowModal(false);
+            }}
+          />
+        )}
       </Container>
     </header>
   );
