@@ -7,7 +7,8 @@ import Prices from './Prices/Prices';
 import Technology from './Technology/Technology';
 import Portfolio from './Portfolio/Portfolio';
 import Reviews from './Reviews/Reviews';
-
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 export const App = () => {
   return (
     <>
@@ -20,6 +21,16 @@ export const App = () => {
       <Reviews />
       <FormSection />
       <Footer />
+      <ToastContainer
+        autoClose={3000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+      />
     </>
   );
 };

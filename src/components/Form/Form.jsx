@@ -1,12 +1,44 @@
 import s from './index.module.css';
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
+import MaskInput from 'components/MaskInput';
+import { toast } from 'react-toastify';
 
 export default function Form() {
   const form = useRef();
-
+  const [errorInput, setErrorInput] = useState({
+    name: false,
+    phone: false,
+    email: false,
+  });
   const sendEmail = e => {
     e.preventDefault();
+    const nameValue = form.current.name.value;
+    const phoneValue = form.current.phone.value;
+    const emailValue = form.current.email.value;
+
+    if (nameValue.trim().length < 3) {
+      toast.error('Name should be more 3 letter');
+      setErrorInput(prev => ({ ...prev, name: true }));
+      return;
+    } else {
+      setErrorInput(prev => ({ ...prev, name: false }));
+    }
+    if (!validatePhone(phoneValue)) {
+      toast.error('Not validate phone');
+      setErrorInput(prev => ({ ...prev, phone: true }));
+      return;
+    } else {
+      setErrorInput(prev => ({ ...prev, phone: false }));
+    }
+    if (!validateEmail(emailValue)) {
+      toast.error('Not validate email');
+      setErrorInput(prev => ({ ...prev, email: true }));
+      return;
+    } else {
+      setErrorInput(prev => ({ ...prev, email: false }));
+    }
+
     emailjs
       .sendForm(
         process.env.REACT_APP_YOUR_SERVICE_ID,
@@ -16,13 +48,25 @@ export default function Form() {
       )
       .then(
         result => {
-          console.log(result.text);
-          form.reset();
+          toast.success('Request was send');
+          form.current.reset();
         },
         error => {
-          console.log(error.text);
+          toast.error(error.text);
         }
       );
+  };
+
+  const validateEmail = email => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
+
+  const validatePhone = phone => {
+    return phone.match(/^\+38\(0..\)...-..-../);
   };
 
   return (
@@ -33,7 +77,7 @@ export default function Form() {
           First Name*
         </label>
         <input
-          className={s.Input}
+          className={errorInput.name ? s.Error : s.Input}
           type="text"
           name="name"
           id="name"
@@ -45,18 +89,23 @@ export default function Form() {
           Phone number*
         </label>
         <input
-          className={s.Input}
+          className={errorInput.phone ? s.Error : s.Input}
           type="phone"
           name="phone"
           id="phone"
           placeholder="+380"
+          data-pattern="+**(***)***-**-**"
+          data-prefix="+38("
+          onInput={MaskInput.maskInput}
+          onFocus={MaskInput.onMaskedInputFocus}
+          onBlur={MaskInput.onMaskedInputBlur}
         />
       </div>
       <label className={s.Label} htmlFor="email">
         Your Email*
       </label>
       <input
-        className={s.Input}
+        className={errorInput.email ? s.Error : s.Input}
         type="email"
         name="email"
         id="email"

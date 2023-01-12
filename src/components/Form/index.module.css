@@ -26,7 +26,8 @@
 	line-height: 1.31;
 	margin-bottom: 8px;
 }
-.Input {
+.Input,
+.Error {
 	position: relative;
 	padding: 13px 20px;
 	width: 100%;
@@ -38,6 +39,9 @@
 	background: linear-gradient(white, white) padding-box, linear-gradient(var(--grey), var(--grey)) border-box;
 	border-radius: 28px;
 	border: 1px solid transparent;
+}
+.Error {
+	background: linear-gradient(white, white) padding-box, linear-gradient(red, red) border-box;
 }
 .Input:not(:placeholder-shown),
 .Input:hover,
@@ -59,6 +63,9 @@ input:-webkit-autofill:active {
 	height: 125px;
 	background: linear-gradient(white, white) padding-box, linear-gradient(var(--grey), var(--grey)) border-box;
 	border: 1px solid transparent;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.38;
 	border-radius: 24px;
 	margin-bottom: 34px;
 	resize: none;
@@ -101,7 +108,8 @@ input:-webkit-autofill:active {
 	.BoxPhone {
 		width: 196px;
 	}
-	.Input {
+	.Input,
+	.Error {
 		margin-bottom: 20px;
 	}
 	.Submit {
