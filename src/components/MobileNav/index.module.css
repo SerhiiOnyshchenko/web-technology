@@ -3,17 +3,30 @@
 	top: 0;
 	left: 0;
 	height: 100%;
-	width: 100%;
+	width: 100vw;
 	display: flex;
 	flex-direction: column;
+	justify-content: space-between;
 	align-items: center;
 	padding: 144px 16px 42px;
-	/* box-sizing: border-box; */
 	background: black;
-	/* transform: translateX(-50%); */
+	transition: var(--transition);
+	animation: tran 1s ease-in-out;
 	z-index: 50;
 }
+@keyframes tran {
+	0% {
+		top: -100%;
+	}
+	100% {
+		top: 0;
+	}
+}
+.navWrapper nav {
+	width: 320px;
+}
 .navWrapper ul {
+	width: 100%;
 	position: relative;
 	background-color: transparent;
 	background-image: url(../../images/Shape-1.png), url(../../images/Shape-2.png);
@@ -53,7 +66,6 @@
 }
 
 .Tel {
-	margin-top: auto;
 	display: flex;
 	justify-content: center;
 }

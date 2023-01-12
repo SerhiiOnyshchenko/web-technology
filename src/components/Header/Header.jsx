@@ -11,9 +11,9 @@ export default function Header() {
   const [isOpen, setOpen] = useState(false);
 
   return (
-    <header className={isOpen ? s.Header : ''}>
+    <header className={s.Header}>
       <Container>
-        <div className={s.HeaderContainer}>
+        <div className={isOpen ? s.HeaderContainerFix : s.HeaderContainer}>
           <Logo />
           {!isMobile ? (
             <>
