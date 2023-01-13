@@ -32,12 +32,12 @@ export default function Modal({ onClose }) {
       {isMobile ? (
         <div className={s.Wrapper}>
           <Logo />
-          <button className={s.Close} type="button" onClick={onClose}>
+          <button className={s.CloseModal} type="button" onClick={onClose}>
             <Close />
           </button>
         </div>
       ) : (
-        <button className={s.Close} type="button" onClick={onClose}>
+        <button className={s.CloseModal} type="button" onClick={onClose}>
           <Close />
         </button>
       )}

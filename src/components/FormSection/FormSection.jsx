@@ -23,8 +23,11 @@ export default function FormSection() {
             <a className={s.Contacts} href="tel:+3809">
               +38(095)768 34 45
             </a>
-            <a className={s.Contacts} href="mailto:web_technology@gmail.com">
-              web_technology@gmail.com
+            <a
+              className={s.Contacts}
+              href="mailto:web.technology.ukr@gmail.com"
+            >
+              web.technology.ukr@gmail.com
             </a>
           </div>
           <Form />

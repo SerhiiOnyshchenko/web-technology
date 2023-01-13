@@ -41,6 +41,12 @@
 	background-clip: text;
 	text-fill-color: transparent;
 }
+@media screen and (max-width: 374px) {
+	.HeaderContainerFix {
+		right: 0;
+		width: 100vw;
+	}
+}
 @media screen and (min-width: 1024px) {
 	.Header {
 		position: relative;
