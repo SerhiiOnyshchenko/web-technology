@@ -56,7 +56,9 @@ input:-webkit-autofill:active {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: var(--bg);
 }
-
+input:focus::placeholder {
+	color: transparent;
+}
 .Textarea {
 	padding: 13px 20px;
 	width: 100%;
