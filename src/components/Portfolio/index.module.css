@@ -19,6 +19,11 @@
 	color: #bcc9df;
 	margin-bottom: 60px;
 }
+.Link {
+	display: block;
+	width: 288px;
+	margin: 0 auto;
+}
 @media screen and (min-width: 1024px) {
 	.Portfolio {
 		margin-bottom: 150px;

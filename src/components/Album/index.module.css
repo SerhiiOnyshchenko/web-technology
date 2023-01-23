@@ -1,0 +1,30 @@
+.Flex {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: auto;
+}
+.Item {
+	width: 288px;
+	transition: var(--transition);
+}
+.Flex:hover > :not(:hover) {
+	opacity: 0.5;
+}
+@media screen and (min-width: 1024px) {
+	.Flex {
+		row-gap: 20px;
+		column-gap: 20px;
+		height: 842px;
+	}
+}
+
+@media screen and (min-width: 1440px) {
+	.Flex {
+		column-gap: 32px;
+		height: 972px;
+	}
+	.Item {
+		width: auto;
+	}
+}
