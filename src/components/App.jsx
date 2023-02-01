@@ -9,9 +9,11 @@ import Portfolio from './Portfolio/Portfolio';
 import Reviews from './Reviews/Reviews';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import ScrollUp from './ScrollUp/ScrollUp';
 export const App = () => {
   return (
     <>
+      <ScrollUp />
       <Header />
       <Hero />
       <OurServices />

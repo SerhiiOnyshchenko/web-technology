@@ -69,7 +69,8 @@ export default function Hero() {
                 </span>
                 <h3 className={s.Title}>Support</h3>
                 <p className={s.Text}>
-                  Create reports with an easy to use drag-and-drop designer.
+                  We provide free technical support within 30 days after project
+                  submission.
                 </p>
               </li>
             </ul>

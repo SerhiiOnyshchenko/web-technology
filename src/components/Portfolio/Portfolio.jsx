@@ -6,6 +6,7 @@ import Molenhauer from '../../images/Rectangle 556-min.png';
 import Pets_Paw from '../../images/Rectangle 557-min.png';
 import Filmoteka from '../../images/Rectangle 558-min.png';
 import Trandes_Mancheater from '../../images/Rectangle 559-min.png';
+import Begin_big from '../../images/Begin_big.png';
 import Album from 'components/Album/Album';
 import { useMediaQuery } from 'react-responsive';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -13,7 +14,7 @@ import 'swiper/css';
 const photos = [
   {
     src: Begin,
-    href: '',
+    href: Begin_big,
     width: 352,
     height: 400,
   },
@@ -69,7 +70,12 @@ export default function Portfolio() {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <img src={item.src} width="288" alt="Portfolio" />
+                  <img
+                    src={item.src}
+                    width="288"
+                    height="440"
+                    alt="Portfolio"
+                  />
                 </a>
               </SwiperSlide>
             ))}
