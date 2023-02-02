@@ -30,7 +30,7 @@ export default function Hero() {
             }}
             active={true}
           >
-            Order a site
+            Get a free consultation
           </Button>
           <div className={s.HeroAdvantage}>
             <ul className={s.List}>
@@ -40,7 +40,8 @@ export default function Hero() {
                 </span>
                 <h3 className={s.Title}>Clean code</h3>
                 <p className={s.Text}>
-                  Create reports with an easy to use drag-and-drop designer.
+                  Clean code improves code readability, maintainability and
+                  extensibility, thus reducing development time.
                 </p>
               </li>
               <li className={s.Item}>

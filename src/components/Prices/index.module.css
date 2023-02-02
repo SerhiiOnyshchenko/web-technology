@@ -1,218 +1,233 @@
 .Prices {
-	margin-bottom: 120px;
+  margin-bottom: 120px;
 }
 .Container {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .Title {
-	font-weight: 700;
-	font-size: 32px;
-	line-height: 1.75;
-	letter-spacing: -2px;
-	margin-bottom: 16px;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1.75;
+  letter-spacing: -2px;
+  margin-bottom: 16px;
 }
 .PreTitle {
-	width: 288px;
-	text-align: center;
+  width: 288px;
+  text-align: center;
 
-	font-size: 16px;
-	line-height: 1.75;
-	letter-spacing: -0.4px;
-	color: var(--grey);
-	margin-bottom: 60px;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: -0.4px;
+  color: var(--grey);
+  margin-bottom: 60px;
 }
 .List {
-	position: relative;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	height: 100%;
-	gap: 48px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  gap: 48px;
 }
 .List::before {
-	display: none;
+  display: none;
 }
 .Item {
-	position: relative;
-	padding: 34px 24px;
-	width: 288px;
-	display: flex;
-	flex-direction: column;
-	border-radius: 16px;
-	background: transparent;
-	background-clip: padding-box;
-	color: var(--white);
-	border: 1px solid transparent;
-	transition: var(--transition);
+  position: relative;
+  padding: 34px 24px;
+  width: 288px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 16px;
+  background: transparent;
+  background-clip: padding-box;
+  color: var(--white);
+  border: 1px solid transparent;
+  transition: var(--transition);
 }
 .Item::after {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -2;
-	border-radius: inherit;
-	background: var(--bg);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -2;
+  border-radius: inherit;
+  background: var(--bg);
 }
 .Item:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -3;
-	margin: -1px;
-	border-radius: inherit;
-	background: var(--gradient);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -3;
+  margin: -1px;
+  border-radius: inherit;
+  background: var(--gradient);
 }
 .Item:hover {
-	background: linear-gradient(
-		94deg,
-		rgba(130, 105, 231, 0.3) 5.99%,
-		rgba(96, 137, 233, 0.3) 55.44%,
-		rgba(104, 192, 232, 0.3) 100%
-	);
+  background: linear-gradient(
+    94deg,
+    rgba(130, 105, 231, 0.3) 5.99%,
+    rgba(96, 137, 233, 0.3) 55.44%,
+    rgba(104, 192, 232, 0.3) 100%
+  );
 }
 
 .TitleH3 {
-	font-weight: 400;
-	font-size: 32px;
-	line-height: 1.31;
-	margin-bottom: 12px;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 1.31;
+  margin-bottom: 12px;
+  position: relative;
 }
+.TitleH3:before {
+  border-bottom: 3px solid red;
+  position: absolute;
+  content: '';
+  width: 37%;
+  height: 50%;
+  transform: rotate(-10deg);
+}
+
 .Text {
-	font-size: 24px;
-	line-height: 1.33;
-	color: var(--white);
+  font-size: 24px;
+  line-height: 1.33;
+  color: var(--white);
 }
 .Line {
-	display: block;
-	width: 100%;
-	height: 1px;
-	background: var(--white);
-	margin: 24px 0;
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: var(--white);
+  margin: 24px 0;
 }
 .Conditions {
-	flex-grow: 1;
-	display: flex;
-	flex-direction: column;
-	gap: 18px;
-	margin-bottom: 33px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-bottom: 33px;
 }
 .Condition {
-	display: flex;
-	align-items: center;
+  display: flex;
+  align-items: center;
 }
 .Condition p {
-	max-width: 200px;
-	text-wrap: wrap;
-	font-size: 14px;
-	line-height: 1.43;
-	color: var(--grey);
+  max-width: 200px;
+  text-wrap: wrap;
+  font-size: 14px;
+  line-height: 1.43;
+  color: var(--grey);
 }
 .Icon {
-	position: relative;
-	align-self: start;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 24px;
-	height: 24px;
-	border-radius: 50%;
-	margin-right: 12px;
+  position: relative;
+  align-self: start;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  margin-right: 12px;
 }
 .Icon::before {
-	content: "";
-	position: absolute;
-	left: 0;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	border-radius: 50%;
-	background: var(--gradient);
-	opacity: 0.15;
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: var(--gradient);
+  opacity: 0.15;
 }
 .Btn {
-	position: relative;
-	padding: 13px 20px 13px 24px;
-	width: 100%;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	background-color: var(--bg);
-	background-clip: padding-box;
-	color: var(--white);
-	/* background: var(--gradient) border-box; */
-	/* border: 2px solid transparent; */
-	/* border: 2px solid; */
-	/* border-image-slice: 1; */
-	/* border-width: 2px; */
-	/* border-style: solid; */
-	/* border-image-source: var(--gradient); */
-	border-radius: 50px;
-	font-weight: 700;
-	font-size: 16px;
-	line-height: 1.31;
-	transition: var(--transition);
+  position: relative;
+  padding: 13px 10px 13px 24px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--bg);
+  background-clip: padding-box;
+  color: var(--white);
+  /* background: var(--gradient) border-box; */
+  /* border: 2px solid transparent; */
+  /* border: 2px solid; */
+  /* border-image-slice: 1; */
+  /* border-width: 2px; */
+  /* border-style: solid; */
+  /* border-image-source: var(--gradient); */
+  border-radius: 50px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  transition: var(--transition);
 }
 .Btn:before {
-	content: "";
-	position: absolute;
-	top: 0;
-	right: 0;
-	bottom: 0;
-	left: 0;
-	z-index: -1;
-	margin: -1px;
-	border-radius: inherit;
-	background: var(--gradient);
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  margin: -1px;
+  border-radius: inherit;
+  background: var(--gradient);
 }
 .Item:hover .Btn {
-	background: transparent;
+  background: transparent;
 }
 @media screen and (min-width: 1024px) {
-	.List {
-		flex-direction: row;
-		gap: 20px;
-	}
-	.List::before {
-		content: "";
-		position: absolute;
-		display: block;
-		left: 0;
-		bottom: 0;
-		width: 504px;
-		height: 504px;
-		border-radius: 50%;
-		background-image: radial-gradient(circle, #2b2078 0%, #4968b2 51.56%, #66ace9 100%);
-		filter: blur(200px);
-		z-index: -1;
-	}
+  .List {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .List::before {
+    content: '';
+    position: absolute;
+    display: block;
+    left: 0;
+    bottom: 0;
+    width: 504px;
+    height: 504px;
+    border-radius: 50%;
+    background-image: radial-gradient(
+      circle,
+      #2b2078 0%,
+      #4968b2 51.56%,
+      #66ace9 100%
+    );
+    filter: blur(200px);
+    z-index: -1;
+  }
 }
 @media screen and (min-width: 1440px) {
-	.OurServices {
-		margin-bottom: 150px;
-	}
-	.PreTitle {
-		width: 352px;
-		font-size: 18px;
-		line-height: 1.56;
-	}
-	.List {
-		gap: 32px;
-	}
-	.Item {
-		padding: 40px 45px;
-		width: 352px;
-	}
-	.Text {
-		font-size: 18px;
-		line-height: 1.33;
-	}
+  .OurServices {
+    margin-bottom: 150px;
+  }
+  .PreTitle {
+    width: 352px;
+    font-size: 18px;
+    line-height: 1.56;
+  }
+  .List {
+    gap: 32px;
+  }
+  .Item {
+    padding: 40px 45px;
+    width: 352px;
+  }
+  .Text {
+    font-size: 18px;
+    line-height: 1.33;
+  }
 }

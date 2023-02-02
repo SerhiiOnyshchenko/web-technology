@@ -11,7 +11,7 @@ export default function OurServices() {
         <div className={s.Container}>
           <h2 className={s.Title}>Our Services</h2>
           <p className={s.PreTitle}>
-            The various services we provide to make your business more powerful
+            Services we provide to make your business better
           </p>
           <ul className={s.List}>
             <li className={s.Item}>
@@ -20,8 +20,7 @@ export default function OurServices() {
               </span>
               <h3 className={s.TitleH3}>Ideate</h3>
               <p className={s.Text}>
-                We help you develop creative ideas so that your business can
-                grow more rapidly
+                We help you develop creative ideas to grow your business faster
               </p>
             </li>
             <li className={s.Item}>
@@ -30,8 +29,8 @@ export default function OurServices() {
               </span>
               <h3 className={s.TitleH3}>Design</h3>
               <p className={s.Text}>
-                We provide services with the best designs than our designer team
-                for your business
+                Our designers will develop a design that will attract new
+                customers
               </p>
             </li>
             <li className={s.Item}>
@@ -40,8 +39,8 @@ export default function OurServices() {
               </span>
               <h3 className={s.TitleH3}>Web Development</h3>
               <p className={s.Text}>
-                We help develop company websites to be more professional and
-                attractive
+                We will create a technically correct website that will be better
+                seen by search engines
               </p>
             </li>
           </ul>

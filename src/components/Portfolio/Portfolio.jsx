@@ -1,11 +1,11 @@
 import s from './index.module.css';
 import Container from 'components/Container/Container';
-import Begin from '../../images/Rectangle 554-min.png';
-import Icecream from '../../images/Rectangle 555-min.png';
-import Molenhauer from '../../images/Rectangle 556-min.png';
-import Pets_Paw from '../../images/Rectangle 557-min.png';
-import Filmoteka from '../../images/Rectangle 558-min.png';
-import Trandes_Mancheater from '../../images/Rectangle 559-min.png';
+import Begin from '../../images/Rectangle 554.png';
+import Icecream from '../../images/Rectangle 555.png';
+import Molenhauer from '../../images/Rectangle 556.png';
+import Pets_Paw from '../../images/Rectangle 557.png';
+import Filmoteka from '../../images/Rectangle 558.png';
+import Trandes_Mancheater from '../../images/Rectangle 559.png';
 import Begin_big from '../../images/Begin_big.png';
 import Album from 'components/Album/Album';
 import { useMediaQuery } from 'react-responsive';
@@ -56,10 +56,7 @@ export default function Portfolio() {
     <section id="Portfolio" className={s.Portfolio}>
       <Container>
         <h2 className={s.title}>Portfolio</h2>
-        <p className={s.text}>
-          Spectacular and effective web solutions with full immersion in your
-          business.
-        </p>
+        <p className={s.text}>Examples of clients who trusted our team</p>
         {isMobile ? (
           <Swiper spaceBetween={50} slidesPerView={1}>
             {photos.map(item => (

@@ -14,11 +14,11 @@ export default function Prices() {
         <div className={s.Container}>
           <h2 className={s.Title}>Our Prices</h2>
           <p className={s.PreTitle}>
-            The various services we provide to make your business more powerful
+            Our prices are competitive and affordable
           </p>
           <ul className={s.List}>
             <li className={s.Item}>
-              <h3 className={s.TitleH3}>$100</h3>
+              <h3 className={s.TitleH3}>$800 $400</h3>
               <p className={s.Text}>Landing page</p>
               <span className={s.Line}></span>
               <ul className={s.Conditions}>
@@ -60,12 +60,12 @@ export default function Prices() {
                   setOpen(true);
                 }}
               >
-                <div className={s.BtnText}>Order a site</div>
+                <div className={s.BtnText}>Get a free consultation</div>
                 <IconRight />
               </button>
             </li>
             <li className={s.Item}>
-              <h3 className={s.TitleH3}>$200</h3>
+              <h3 className={s.TitleH3}>$1200 $600</h3>
               <p className={s.Text}>Corporate websites</p>
               <span className={s.Line}></span>
               <ul className={s.Conditions}>
@@ -107,12 +107,12 @@ export default function Prices() {
                   setOpen(true);
                 }}
               >
-                <div className={s.BtnText}>Order a site</div>
+                <div className={s.BtnText}>Get a free consultation</div>
                 <IconRight />
               </button>
             </li>
             <li className={s.Item}>
-              <h3 className={s.TitleH3}>$300</h3>
+              <h3 className={s.TitleH3}>$1500 $800</h3>
               <p className={s.Text}>E-commerce</p>
               <span className={s.Line}></span>
               <ul className={s.Conditions}>
@@ -148,7 +148,7 @@ export default function Prices() {
                   setOpen(true);
                 }}
               >
-                <div className={s.BtnText}>Order a site</div>
+                <div className={s.BtnText}>Get a free consultation</div>
                 <IconRight />
               </button>
             </li>

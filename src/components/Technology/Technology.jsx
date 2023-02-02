@@ -8,8 +8,8 @@ export default function Technology() {
         <div className={s.Container}>
           <h2 className={s.Title}>Our Technology</h2>
           <p className={s.PreTitle}>
-            We are experts in web technologies, which is enough for a full and
-            maximum functional website for your business
+            We are experts in web technologies, for a full-fledged and most
+            functional website for your business
           </p>
           <div className={s.Wrapper}>
             <ul className={s.List}>
