@@ -10,16 +10,12 @@ export default function FormSection() {
           <div className={s.WrapperText}>
             <h2 className={s.Title}>Talk to us about your project</h2>
             <p className={s.Text}>
-              We would love to hear about your project and discuss how we can
-              help. Please fill the form on the right side to schedule a call or
-              discussion and meeting on the your convenient time.
+              We would like to hear about your project and discuss a detailed
+              work plan. Please fill out the form on the right to schedule a
+              call or discussion and meeting at your convenience.
             </p>
             <div className={s.Line}></div>
-            <p className={s.Grey}>
-              Any problem about your booking?
-              <br />
-              You can contact us on :
-            </p>
+            <p className={s.Grey}>You can contact us on :</p>
             <a className={s.Contacts} href="tel:+3809">
               +38(095)768 34 45
             </a>
@@ -28,6 +24,12 @@ export default function FormSection() {
               href="mailto:web.technology.ukr@gmail.com"
             >
               web.technology.ukr@gmail.com
+            </a>
+            <a
+              className={s.Contacts}
+              href="https://instagram.com/web_technology_ua?igshid=NTdlMDg3MTY="
+            >
+              web_technology_ua
             </a>
           </div>
           <Form />

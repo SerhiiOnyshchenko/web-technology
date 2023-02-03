@@ -121,7 +121,7 @@ export default function Form() {
         id="Message"
       />
       <button className={s.Submit} type="submit">
-        Request a call
+      Get a free consultation
       </button>
     </form>
   );

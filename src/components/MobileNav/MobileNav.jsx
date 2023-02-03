@@ -20,7 +20,7 @@ export default function MobileNav({ isOpen, setOpen }) {
             }}
             active={true}
           >
-            Request a call
+            Get a free consultation
           </Button>
           {showModal && (
             <Modal

@@ -27,7 +27,7 @@ export default function Header() {
                   setShowModal(true);
                 }}
               >
-                Request a call
+                Get a free consultation
               </button>
             </>
           ) : (
