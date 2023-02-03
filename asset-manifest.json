@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.6537eada.css",
-    "main.js": "/static/js/main.5086d163.js",
+    "main.css": "/static/css/main.5570d6c0.css",
+    "main.js": "/static/js/main.5e275332.js",
     "static/media/Begin_big.png": "/static/media/Begin_big.971f0dbe8054be17e1ed.png",
-    "static/media/Rectangle 558-min.png": "/static/media/Rectangle 558-min.17a35858da3d6a3a1116.png",
-    "static/media/Rectangle 556-min.png": "/static/media/Rectangle 556-min.12ac947a1e56bfe98e1c.png",
-    "static/media/Rectangle 554-min.png": "/static/media/Rectangle 554-min.370e58930503171c312c.png",
-    "static/media/Rectangle 559-min.png": "/static/media/Rectangle 559-min.6ceba7899f9fba626742.png",
-    "static/media/Rectangle 555-min.png": "/static/media/Rectangle 555-min.87aa6bf1be72cb281ac6.png",
-    "static/media/Rectangle 557-min.png": "/static/media/Rectangle 557-min.00abddadc16c1fcfe7a5.png",
+    "static/media/Rectangle 558.png": "/static/media/Rectangle 558.082d529e0c675cdcbe37.png",
+    "static/media/Rectangle 556.png": "/static/media/Rectangle 556.75434c5f1961f262817a.png",
+    "static/media/Rectangle 554.png": "/static/media/Rectangle 554.8f41e54934e271b648b6.png",
+    "static/media/Rectangle 555.png": "/static/media/Rectangle 555.f64225ca6a57b3310700.png",
+    "static/media/Rectangle 559.png": "/static/media/Rectangle 559.0d19686f96f20e7f670f.png",
+    "static/media/Rectangle 557.png": "/static/media/Rectangle 557.c51cf9161658b7f83ee6.png",
     "static/media/Logo.svg": "/static/media/Logo.c01af85625d6ae39cbdfd2e6638cc126.svg",
     "static/media/Idea.svg": "/static/media/Idea.fba4828c475c767ec2c32b35a434d7ba.svg",
     "static/media/Icon_CS.svg": "/static/media/Icon_CS.347b9904c6f9a560e8ba2fffcfab5bc9.svg",
@@ -25,11 +25,11 @@
     "static/media/Icon.svg": "/static/media/Icon.a3eef5fab508a2c43b378895b789cef7.svg",
     "static/media/Close.svg": "/static/media/Close.351d5a6f9c706bf78f66992317ab3c88.svg",
     "static/media/Arrow_Right_white.svg": "/static/media/Arrow_Right_white.715a3b4873dc917f2db0dce9b609d417.svg",
-    "main.6537eada.css.map": "/static/css/main.6537eada.css.map",
-    "main.5086d163.js.map": "/static/js/main.5086d163.js.map"
+    "main.5570d6c0.css.map": "/static/css/main.5570d6c0.css.map",
+    "main.5e275332.js.map": "/static/js/main.5e275332.js.map"
   },
   "entrypoints": [
-    "static/css/main.6537eada.css",
-    "static/js/main.5086d163.js"
+    "static/css/main.5570d6c0.css",
+    "static/js/main.5e275332.js"
   ]
 }
