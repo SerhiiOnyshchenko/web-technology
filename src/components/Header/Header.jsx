@@ -6,11 +6,13 @@ import MobileNav from 'components/MobileNav/MobileNav';
 import Nav from 'components/Nav/Nav';
 import { useState } from 'react';
 import Modal from 'components/Modal/Modal';
+import { useTranslation } from 'react-i18next';
 
 export default function Header() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
   const [isOpen, setOpen] = useState(false);
   const [showModal, setShowModal] = useState(false);
+  const { t } = useTranslation();
 
   return (
     <header className={s.Header}>
@@ -27,7 +29,7 @@ export default function Header() {
                   setShowModal(true);
                 }}
               >
-                Get a free consultation
+                {t('Button')}
               </button>
             </>
           ) : (
