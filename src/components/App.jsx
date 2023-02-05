@@ -7,9 +7,9 @@ import Prices from './Prices/Prices';
 import Technology from './Technology/Technology';
 import Portfolio from './Portfolio/Portfolio';
 import Reviews from './Reviews/Reviews';
+import ScrollUp from './ScrollUp/ScrollUp';
 import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import ScrollUp from './ScrollUp/ScrollUp';
 export const App = () => {
   return (
     <>

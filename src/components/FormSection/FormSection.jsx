@@ -1,21 +1,19 @@
 import Container from 'components/Container/Container';
 import Form from 'components/Form/Form';
 import s from './index.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function FormSection() {
+  const { t } = useTranslation();
   return (
     <section className={s.FormSection}>
       <Container>
         <div className={s.Wrapper}>
           <div className={s.WrapperText}>
-            <h2 className={s.Title}>Talk to us about your project</h2>
-            <p className={s.Text}>
-              We would like to hear about your project and discuss a detailed
-              work plan. Please fill out the form on the right to schedule a
-              call or discussion and meeting at your convenience.
-            </p>
+            <h2 className={s.Title}>{t('Talk to us about your project')}</h2>
+            <p className={s.Text}>{t('Talk to us about your project text')}</p>
             <div className={s.Line}></div>
-            <p className={s.Grey}>You can contact us on :</p>
+            <p className={s.Grey}>{t('You can contact us on :')}</p>
             <a className={s.Contacts} href="tel:+3809">
               +38(095)768 34 45
             </a>

@@ -11,6 +11,8 @@ import Album from 'components/Album/Album';
 import { useMediaQuery } from 'react-responsive';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import { useTranslation } from 'react-i18next';
+
 const photos = [
   {
     src: Begin,
@@ -51,12 +53,13 @@ const photos = [
 ];
 export default function Portfolio() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
+  const { t } = useTranslation();
 
   return (
     <section id="Portfolio" className={s.Portfolio}>
       <Container>
-        <h2 className={s.title}>Portfolio</h2>
-        <p className={s.text}>Examples of clients who trusted our team</p>
+        <h2 className={s.title}>{t('Portfolio')}</h2>
+        <p className={s.text}>{t('Portfolio tittle')}</p>
         {isMobile ? (
           <Swiper spaceBetween={50} slidesPerView={1}>
             {photos.map(item => (

@@ -3,9 +3,11 @@ import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import MaskInput from 'components/MaskInput';
 import { toast } from 'react-toastify';
+import { useTranslation } from 'react-i18next';
 
 export default function Form() {
   const form = useRef();
+  const { t } = useTranslation();
   const [errorInput, setErrorInput] = useState({
     name: false,
     phone: false,
@@ -71,10 +73,10 @@ export default function Form() {
 
   return (
     <form className={s.Form} ref={form} onSubmit={sendEmail} method="POST">
-      <h3 className={s.Title}>Discuss the project</h3>
+      <h3 className={s.Title}>{t('Discuss the project')}</h3>
       <div className={s.BoxName}>
         <label className={s.Label} htmlFor="name">
-          First Name*
+          {t('First Name*')}
         </label>
         <input
           className={errorInput.name ? s.Error : s.Input}
@@ -86,7 +88,7 @@ export default function Form() {
       </div>
       <div className={s.BoxPhone}>
         <label className={s.Label} htmlFor="phone">
-          Phone number*
+          {t('Phone number*')}
         </label>
         <input
           className={errorInput.phone ? s.Error : s.Input}
@@ -102,7 +104,7 @@ export default function Form() {
         />
       </div>
       <label className={s.Label} htmlFor="email">
-        Your Email*
+        {t('Your Email*')}
       </label>
       <input
         className={errorInput.email ? s.Error : s.Input}
@@ -112,7 +114,7 @@ export default function Form() {
         placeholder="Yourname@gmail.com"
       />
       <label className={s.Label} htmlFor="Message">
-        Message
+        {t('Message')}
       </label>
       <textarea
         className={s.Textarea}
@@ -121,7 +123,7 @@ export default function Form() {
         id="Message"
       />
       <button className={s.Submit} type="submit">
-      Get a free consultation
+        {t('Button')}
       </button>
     </form>
   );

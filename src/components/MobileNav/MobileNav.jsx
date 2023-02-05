@@ -4,10 +4,11 @@ import Modal from 'components/Modal/Modal';
 import Nav from 'components/Nav/Nav';
 import { useState } from 'react';
 import s from './index.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function MobileNav({ isOpen, setOpen }) {
   const [showModal, setShowModal] = useState(false);
-
+  const { t } = useTranslation();
   return (
     <>
       <BurgerMenuToggle isOpen={isOpen} toggle={() => setOpen(!isOpen)} />
@@ -20,7 +21,7 @@ export default function MobileNav({ isOpen, setOpen }) {
             }}
             active={true}
           >
-            Get a free consultation
+            {t('Button')}
           </Button>
           {showModal && (
             <Modal

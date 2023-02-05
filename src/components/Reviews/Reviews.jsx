@@ -4,7 +4,7 @@ import { useState } from 'react';
 import { ReactComponent as IconLeft } from '../../images/svg/arrow_left.svg';
 import { ReactComponent as IconRight } from '../../images/svg/arrow_right.svg';
 import { ReactComponent as IconQuote } from '../../images/svg/quote-left.svg';
-
+import { useTranslation } from 'react-i18next';
 const reviews = [
   {
     text: 'The guys did an excellent job. Make adjustments at the request of the client. In touch all the time.',
@@ -20,6 +20,7 @@ const reviews = [
 
 export default function Reviews() {
   const [review, setReview] = useState(0);
+  const { t } = useTranslation();
   const handleClick = number => {
     // if (review + number > reviews.length - 1) {
     //   setReview(0);
@@ -32,8 +33,8 @@ export default function Reviews() {
   return (
     <section id="Reviews" className={s.Reviews}>
       <Container>
-        <h2 className={s.Title}>Reviews</h2>
-        <p className={s.PreTitle}>Feedback from our clients</p>
+        <h2 className={s.Title}>{t("Reviews")}</h2>
+        <p className={s.PreTitle}>{t("Reviews tittle")}</p>
         <p className={s.Text}>{reviews[review].text}</p>
         <div className={s.Wrapper}>
           <div className={s.BoxName}>

@@ -1,16 +1,15 @@
 import Container from 'components/Container/Container';
 import s from './index.module.css';
+import { useTranslation } from 'react-i18next';
 
 export default function Technology() {
+  const { t } = useTranslation();
   return (
     <section className={s.Technology}>
       <Container>
         <div className={s.Container}>
-          <h2 className={s.Title}>Our Technology</h2>
-          <p className={s.PreTitle}>
-            We are experts in web technologies, for a full-fledged and most
-            functional website for your business
-          </p>
+          <h2 className={s.Title}>{t('Our Technology')}</h2>
+          <p className={s.PreTitle}>{t('Our Technology tittle')}</p>
           <div className={s.Wrapper}>
             <ul className={s.List}>
               <li className={s.Item}>html5</li>
