@@ -60,7 +60,7 @@ export default function Prices() {
                   setOpen(true);
                 }}
               >
-                <div className={s.BtnText}>{t('Button')}</div>
+                <div className={s.BtnText}>{t('Button small')}</div>
                 <IconRight />
               </button>
             </li>
@@ -107,7 +107,7 @@ export default function Prices() {
                   setOpen(true);
                 }}
               >
-                <div className={s.BtnText}>{t('Button')}</div>
+                <div className={s.BtnText}>{t('Button small')}</div>
                 <IconRight />
               </button>
             </li>
@@ -148,7 +148,7 @@ export default function Prices() {
                   setOpen(true);
                 }}
               >
-                <div className={s.BtnText}>{t('Button')}</div>
+                <div className={s.BtnText}>{t('Button small')}</div>
                 <IconRight />
               </button>
             </li>

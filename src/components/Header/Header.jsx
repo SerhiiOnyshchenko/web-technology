@@ -7,6 +7,7 @@ import Nav from 'components/Nav/Nav';
 import { useState } from 'react';
 import Modal from 'components/Modal/Modal';
 import { useTranslation } from 'react-i18next';
+import ButtonLanguage from 'components/ButtonLanguage/ButtonLanguage';
 
 export default function Header() {
   const isMobile = useMediaQuery({ maxWidth: 1023 });
@@ -22,6 +23,7 @@ export default function Header() {
           {!isMobile ? (
             <>
               <Nav />
+              <ButtonLanguage />
               <button
                 type="button"
                 className={s.Request}
@@ -29,7 +31,7 @@ export default function Header() {
                   setShowModal(true);
                 }}
               >
-                {t('Button')}
+                {t('Button small')}
               </button>
             </>
           ) : (

@@ -1,11 +1,11 @@
 .Btn {
   position: relative;
-  padding: 17px 47px;
+  padding: 10px 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
-  background: var(--bg);
+  background: var(--gradient);
   background-clip: padding-box;
   color: var(--white);
   border: 1px solid transparent;
@@ -27,30 +27,4 @@
   border-radius: inherit;
   background: var(--gradient);
   transition: var(--transition);
-}
-.Btn:hover,
-.Btn:focus {
-  transition: var(--transition);
-  background: transparent;
-}
-.Active {
-  position: relative;
-  padding: 17px 47px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50px;
-  background: transparent;
-  background-clip: padding-box;
-  color: var(--white);
-  border: 1px solid transparent;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.31;
-  transition: var(--transition);
-}
-.Active:hover,
-.Active:focus {
-  transition: var(--transition);
-  background: rgba(0, 0, 0, 0.3);
 }
