@@ -1,13 +1,10 @@
 import React, { useRef } from 'react';
-import { useMediaQuery } from 'react-responsive';
 import s from './index.module.css';
 import { ReactComponent as ArrowUp } from '../../images/svg/up-arrow.svg';
-import Container from 'components/Container/Container';
 
 export default function ScrollUp() {
   const buttonScrollToTop = useRef();
   window.onscroll = () => scrollToTopFunction();
-  const isMobile = useMediaQuery({ maxWidth: 1123 });
 
   function scrollToTopFunction() {
     if (
@@ -25,20 +22,14 @@ export default function ScrollUp() {
   };
 
   return (
-    <Container>
-      {isMobile ? (
-        <button></button>
-      ) : (
-        <button
-          ref={buttonScrollToTop}
-          id="BtnScrollToTop"
-          onClick={onClickBtn}
-          type="button"
-          className={s.Btn}
-        >
-          <ArrowUp />
-        </button>
-      )}
-    </Container>
+    <button
+      ref={buttonScrollToTop}
+      id="BtnScrollToTop"
+      onClick={onClickBtn}
+      type="button"
+      className={s.Btn}
+    >
+      <ArrowUp />
+    </button>
   );
 }

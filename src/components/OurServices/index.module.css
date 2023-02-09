@@ -28,7 +28,6 @@
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
 	gap: 32px;
 }
 .Item {
@@ -37,7 +36,6 @@
 	width: 288px;
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
 	border-radius: 16px;
 	background: var(--bg);
@@ -90,6 +88,7 @@
 	font-size: 14px;
 	line-height: 1.71;
 	color: var(--grey);
+	flex-grow: 1;
 }
 @media screen and (min-width: 1024px) {
 	.List {

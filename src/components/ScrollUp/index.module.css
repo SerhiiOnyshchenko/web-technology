@@ -1,36 +1,37 @@
 .Btn {
-  display: none;
-  justify-content: center;
-  align-items: center;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: transparent;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	bottom: 30px;
+	right: 30px;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	background: transparent;
+	z-index: 10;
 }
 .Btn:hover {
-  transform: scale(1.1);
+	transform: scale(1.1);
 }
 
 .Btn svg stop:nth-child(1),
 .Btn svg stop:nth-child(2),
 .Btn svg stop:nth-child(3) {
-  transition: var(--transition);
-  stop-color: var(--white);
+	transition: var(--transition);
+	stop-color: var(--white);
 }
 .Btn:hover svg stop:nth-child(1) {
-  stop-color: #8269e7;
+	stop-color: #8269e7;
 }
 .Btn:hover svg stop:nth-child(2) {
-  stop-color: #6089e9;
+	stop-color: #6089e9;
 }
 .Btn:hover svg stop:nth-child(3) {
-  stop-color: #68c0e8;
+	stop-color: #68c0e8;
 }
 .Btn:disabled svg stop:nth-child(1),
 .Btn:disabled svg stop:nth-child(2),
 .Btn:disabled svg stop:nth-child(3) {
-  stop-color: var(--grey);
+	stop-color: var(--grey);
 }
