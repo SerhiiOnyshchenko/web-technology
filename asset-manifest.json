@@ -1,8 +1,13 @@
 {
   "files": {
-    "main.css": "/static/css/main.cbb8eaf0.css",
-    "main.js": "/static/js/main.951ee355.js",
+    "main.css": "/static/css/main.91f65686.css",
+    "main.js": "/static/js/main.f7ffdbae.js",
+    "static/media/Molenhauer_big.png": "/static/media/Molenhauer_big.67f1627af428795c5ea4.png",
+    "static/media/Filmoteka_big.jpg": "/static/media/Filmoteka_big.b64b8c572929928985cf.jpg",
     "static/media/Begin_big.png": "/static/media/Begin_big.971f0dbe8054be17e1ed.png",
+    "static/media/Pets_Paw_big.png": "/static/media/Pets_Paw_big.92ed2b2394977d8d19ef.png",
+    "static/media/Trandes_Mancheater_big.png": "/static/media/Trandes_Mancheater_big.594869cd35f4c9682f9c.png",
+    "static/media/Icecream_big.jpg": "/static/media/Icecream_big.10e6899fcae15273ad94.jpg",
     "static/media/Rectangle 558.png": "/static/media/Rectangle 558.082d529e0c675cdcbe37.png",
     "static/media/Rectangle 556.png": "/static/media/Rectangle 556.75434c5f1961f262817a.png",
     "static/media/Rectangle 554.png": "/static/media/Rectangle 554.8f41e54934e271b648b6.png",
@@ -25,11 +30,11 @@
     "static/media/Icon.svg": "/static/media/Icon.a3eef5fab508a2c43b378895b789cef7.svg",
     "static/media/Close.svg": "/static/media/Close.351d5a6f9c706bf78f66992317ab3c88.svg",
     "static/media/Arrow_Right_white.svg": "/static/media/Arrow_Right_white.715a3b4873dc917f2db0dce9b609d417.svg",
-    "main.cbb8eaf0.css.map": "/static/css/main.cbb8eaf0.css.map",
-    "main.951ee355.js.map": "/static/js/main.951ee355.js.map"
+    "main.91f65686.css.map": "/static/css/main.91f65686.css.map",
+    "main.f7ffdbae.js.map": "/static/js/main.f7ffdbae.js.map"
   },
   "entrypoints": [
-    "static/css/main.cbb8eaf0.css",
-    "static/js/main.951ee355.js"
+    "static/css/main.91f65686.css",
+    "static/js/main.f7ffdbae.js"
   ]
 }
