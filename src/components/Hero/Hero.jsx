@@ -19,6 +19,7 @@ export default function Hero() {
           <h1 className={s.HeroTitle}>
             {t('Hero title')}{' '}
             <span className={s.TitleText}>{t('Hero title span')}</span>{' '}
+            <span className={s.HeroTitle}>{t('Hero title span1')}</span>{' '}
           </h1>
           <p className={s.HeroAfterTitle}>{t('Hero awterTitle')}</p>
           <Button
