@@ -123,7 +123,7 @@ export default function Form() {
         id="Message"
       />
       <button className={s.Submit} type="submit">
-        {t('Button')}
+        {t('Button small')}
       </button>
     </form>
   );

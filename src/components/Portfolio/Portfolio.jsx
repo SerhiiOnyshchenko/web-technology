@@ -8,7 +8,7 @@ import Filmoteka from '../../images/Rectangle 558.png';
 import Trandes_Mancheater from '../../images/Rectangle 559.png';
 import Begin_big from '../../images/Begin_big.png';
 import Icecream_big from '../../images/Icecream_big.jpg';
-import Pets_Paw_big from '../../images/Pets_Paw_big.png';
+import Petly_big from '../../images/Petly_big.png';
 import Molenhauer_big from '../../images/Molenhauer_big.png';
 import Trandes_Mancheater_big from '../../images/Trandes_Mancheater_big.png';
 import Filmoteka_big from '../../images/Filmoteka_big.jpg';
@@ -43,7 +43,7 @@ const photos = [
   },
   {
     src: Pets_Paw,
-    largeSrc: Pets_Paw_big,
+    largeSrc: Petly_big,
     href: 'https://pets-paw-intern.netlify.app/',
     width: 352,
     height: 422,

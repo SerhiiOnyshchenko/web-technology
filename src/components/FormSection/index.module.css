@@ -72,11 +72,32 @@
 	letter-spacing: 0.2px;
 	margin-bottom: 12px;
 }
+.Contacts_icon{
+	display: flex;
+	align-items: center;
+}
+.Contacts_icon svg stop:nth-child(1),
+.Contacts_icon svg stop:nth-child(2),
+.Contacts_icon svg stop:nth-child(3) {
+	transition: var(--transition);
+	stop-color: var(--white);
+}
+.Contacts_icon:hover svg stop:nth-child(1) {
+	stop-color: #8269e7;
+}
+.Contacts_icon:hover svg stop:nth-child(2) {
+	stop-color: #6089e9;
+}
+.Contacts_icon:hover svg stop:nth-child(3) {
+	stop-color: #68c0e8;
+}
+
 .Contacts {
 	display: block;
 	font-size: 16px;
 	line-height: 1.7;
 	color: var(--text);
+	margin-left: 10px;
 }
 @media screen and (max-width: 374px) {
 	.Wrapper {
@@ -100,7 +121,7 @@
 		line-height: 1.33;
 	}
 	.Line {
-		margin: 72px 0 36px;
+		margin: 50px 0 36px;
 	}
 	.Grey {
 		margin-bottom: 24px;
