@@ -18,7 +18,7 @@ export default function Prices() {
           <p className={s.PreTitle}>{t('Our Prices tittle')}</p>
           <ul className={s.List}>
             <li className={s.Item}>
-              <h3 className={s.TitleH3}>$800 $400</h3>
+              <h3 className={s.TitleH3}>$800 $500</h3>
               <p className={s.Text}>{t('Landing page')}</p>
               <span className={s.Line}></span>
               <ul className={s.Conditions}>
@@ -65,7 +65,7 @@ export default function Prices() {
               </button>
             </li>
             <li className={s.Item}>
-              <h3 className={s.TitleH3}>$1200 $600</h3>
+              <h3 className={s.TitleH3}>$1200 $700</h3>
               <p className={s.Text}>{t('Corporate websites')}</p>
               <span className={s.Line}></span>
               <ul className={s.Conditions}>
@@ -112,7 +112,7 @@ export default function Prices() {
               </button>
             </li>
             <li className={s.Item}>
-              <h3 className={s.TitleH3}>$1500 $800</h3>
+              <h3 className={s.TitleH3}>$1500 $900</h3>
               <p className={s.Text}>{t('E-commerce')}</p>
               <span className={s.Line}></span>
               <ul className={s.Conditions}>

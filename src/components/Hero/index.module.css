@@ -123,7 +123,7 @@
 @media screen and (max-width: 374px) {
   .HeroTitle {
     font-size: 24px;
-    width: 320px;
+    width: 250px;
   }
 }
 @media screen and (min-width: 1024px) {
